@@ -4,13 +4,13 @@
   <test name="TestIOS">
   	<parameter name="deviceQuery" value="@os='ios'"/>
     <classes>
-      <class name="com.experitest.auto.IOSDemoTest"/>
+      <class name="AppliToolAbk.IOSDemoTest"/>
     </classes>
   </test> <!-- Test -->
   <test name="TestAndroid">
   	<parameter name="deviceQuery" value="@os='android'"/>
     <classes>
-      <class name="com.experitest.auto.AndroidDemoTest"/>
+      <class name="AppliToolAbk.AndroidDemoTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
