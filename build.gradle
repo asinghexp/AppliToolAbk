@@ -1,4 +1,8 @@
+group 'com.experitest'
+version '1.0-SNAPSHOT'
+
 apply plugin: 'java'
+apply plugin: 'eclipse'
 
 repositories {
 
@@ -8,8 +12,28 @@ repositories {
     }
 }
 
+eclipse {
+    classpath {
+        downloadJavadoc = true
+    }
+}
+
+clean.dependsOn "cleanEclipse"
+build.dependsOn "eclipse"
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+    }
+}
+
+
 test {
-    useTestNG()
+    useTestNG() {
+    	suites './testng.xml'
+    }
 }
 
 dependencies {
