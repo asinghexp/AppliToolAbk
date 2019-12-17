@@ -50,7 +50,7 @@ public class AndroidDemoTest extends BaseTest {
 		eyes.setHostOS("Android");
         eyes.setHostApp("My App");
 
-		eyes.open("appName","testName_2");
+		eyes.open("appName","testName_Applitools");
 	}
 	
 	@Test
