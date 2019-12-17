@@ -38,7 +38,7 @@ test {
     }
 }
 
-compileJava { 
+compileJava {
   options.encoding = "UTF-8" 
 }
 
