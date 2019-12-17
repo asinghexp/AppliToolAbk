@@ -64,8 +64,9 @@ public class AndroidDemoTest extends BaseTest {
 		
 		//eyes.checkWindow();
 		
-		driver.findElement(By.xpath("//*[@id='bg_circular' and ./parent::*[(./preceding-sibling::* | ./following-sibling::*)[@text='Döviz\n" + 
-				"kurları']]]")).click();
+		/*driver.findElement(By.xpath("//*[@id='bg_circular' and ./parent::*[(./preceding-sibling::* | ./following-sibling::*)[@text='Döviz\n" + 
+				"kurları']]]")).click();*/
+		driver.findElement(By.xpath("//*[@id='item2']")).click();
 		
 		EyesCheck("kurları");
 		
