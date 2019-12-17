@@ -4,6 +4,8 @@ version '1.0-SNAPSHOT'
 apply plugin: 'java'
 apply plugin: 'eclipse'
 
+sourceCompatibility = 1.8
+
 repositories {
 
     mavenCentral()
@@ -38,7 +40,7 @@ test {
 
 dependencies {
     testCompile group: 'org.testng', name: 'testng', version: '6.11'
-    //compile 'org.testng:testng:6.9.10'
+    compile 'org.testng:testng:6.9.10'
     compile group: 'io.appium', name: 'java-client', version: '5.0.4'
     compile group: 'com.applitools', name: 'eyes-images-java3', version: '3.2'
 
