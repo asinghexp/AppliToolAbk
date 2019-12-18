@@ -39,7 +39,7 @@ public class AndroidDemoTest extends BaseTest {
 		init(deviceQuery);
 		dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.akbank.android.apps.akbank_direkt");
 		dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "com.akbank.akbankdirekt.ui.prelogin.SplashActivity");
-		dc.setCapability("testName", "AndroidDemoTest");
+		dc.setCapability("testName", "AndroidDemoTest New");
 		dc.setCapability("automationName", "UiAutomator2");
 
 		driver = new AndroidDriver<>(new URL(getProperty("url",cloudProperties) + "/wd/hub"), dc);
@@ -50,7 +50,7 @@ public class AndroidDemoTest extends BaseTest {
 		eyes.setHostOS("Android");
         eyes.setHostApp("My App");
 
-		eyes.open("appName","testName_Applitools");
+		eyes.open("appName","testName_Applitools_t1");
 	}
 	
 	@Test
@@ -102,7 +102,7 @@ public class AndroidDemoTest extends BaseTest {
 		driver.findElement(By.xpath("//*[@id='input_text' and ./parent::*[./parent::*[@id='password_input']]]")).click();
 		EyesCheck("Wrong PWD");
 		driver.findElement(By.xpath("//*[@id='input_text' and ./parent::*[./parent::*[@id='password_input']]]")).sendKeys("123456");
-		Thread.sleep(10000);
+		//Thread.sleep(10000);
 		driver.findElement(By.xpath("//*[@text='TAMAM']")).click();
 		EyesCheck("Logged In");
 	}
